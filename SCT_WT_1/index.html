@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="section">
+        <div class="content">
+            <h1>Welcome to Your Professional Space</h1>
+            <p>Your vision, our platform. Let’s make it happen.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>We aim to empower individuals and businesses through innovative solutions.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Vision</h3>
+                <p>Creating a seamless experience that transforms ideas into reality.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Team</h3>
+                <p>Professionals committed to delivering excellence, one project at a time.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="section">
+        <h2>What We Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Custom websites tailored to your needs.</p>
+                <button class="action-button">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>Creating user-friendly and aesthetic designs.</p>
+                <button class="action-button">Explore</button>
+            </div>
+            <div class="service-card">
+                <h3>SEO & Marketing</h3>
+                <p>Boosting your online presence effectively.</p>
+                <button class="action-button">Contact Us</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Abi Varsan P. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
