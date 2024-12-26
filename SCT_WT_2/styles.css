@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #1e272e; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+    text-align: center;
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px #1c262e;
+    width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ecf0f1;
+}
+
+/* Display Section */
+.display-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #273746;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 10px #1c252b, inset -4px -4px 10px #32434d;
+}
+
+#time-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ecf0f1;
+    letter-spacing: 2px;
+}
+
+/* Controls Styling */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f5f5f5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 3px 3px 8px #1c262e, -3px -3px 8px #344b56;
+}
+
+/* Button Colors */
+#start-btn {
+    background-color: #27ae60;
+}
+
+#pause-btn {
+    background-color: #f39c12;
+}
+
+#reset-btn {
+    background-color: #c0392b;
+}
+
+#lap-btn {
+    background-color: #2980b9;
+}
+
+/* Button Hover Effects */
+.controls button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+/* Lap Section */
+.lap-section {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    background: #273746;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 10px #1c252b, inset -4px -4px 10px #32434d;
+}
+
+.lap-section h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #ecf0f1;
+}
+
+#lap-times {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+/* Scrollbar Styling */
+#lap-times::-webkit-scrollbar {
+    width: 6px;
+}
+
+#lap-times::-webkit-scrollbar-thumb {
+    background: #7f8c8d;
+    border-radius: 3px;
+}
+
+#lap-times::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
+
+/* Lap Items */
+#lap-times li {
+    padding: 5px 0;
+    border-bottom: 1px solid #34495e;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

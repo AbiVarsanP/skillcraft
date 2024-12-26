@@ -1,0 +1,91 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#game-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+#dark-mode-toggle {
+    margin-bottom: 10px;
+}
+
+.dark-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.dark-mode #game-container {
+    background-color: #f4f4f4;
+}
+
+.dark-mode .cell {
+    background-color: #e0e0e0;
+    color: #121212;
+}
